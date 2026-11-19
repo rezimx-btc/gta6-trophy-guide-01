@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Ledger — GTA VI Trophy Guide &amp; Tracker</title>
+<meta name="description" content="The complete guide and tracker for all 55 PlayStation 5 trophies of Grand Theft Auto VI: official names, descriptions and grades, cited guides, a platinum roadmap, missable flags and a saved checklist.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5</p>
+    <h1>Leonida Ledger</h1>
+    <p class="subtitle">Every trophy. Every guide. Every source. The road to the Platinum, tracked.</p>
+    <div class="progress-wrap" aria-label="Trophy progress">
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+      <p class="progress-text"><span id="progress-count">0 / 55</span> earned &middot; <span id="progress-platinum">Platinum: 54 to go</span></p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="toolbar" aria-label="Tracker controls">
+    <div class="search-row">
+      <label class="search-label" for="search">Search trophies</label>
+      <input id="search" type="search" placeholder="Type a name, place or activity&hellip;" autocomplete="off">
+    </div>
+    <div class="filter-row" role="group" aria-label="Filter by kind">
+      <button class="filter-btn active" data-filter="all" type="button">All 55</button>
+      <button class="filter-btn" data-filter="story" type="button">Story</button>
+      <button class="filter-btn" data-filter="missable" type="button">Missable</button>
+      <button class="filter-btn" data-filter="collectible" type="button">Collectibles</button>
+      <button class="filter-btn" data-filter="activity" type="button">Activities</button>
+      <button class="filter-btn" data-filter="online" type="button">Online</button>
+      <button class="filter-btn" data-filter="earned" type="button">Earned</button>
+      <button class="filter-btn" data-filter="remaining" type="button">Remaining</button>
+    </div>
+    <div class="options-row">
+      <label class="toggle">
+        <input id="spoiler-toggle" type="checkbox">
+        <span>Hide story spoilers until earned</span>
+      </label>
+      <div class="io-buttons">
+        <button id="export-btn" type="button">Export progress</button>
+        <button id="import-btn" type="button">Import progress</button>
+        <input id="import-file" type="file" accept=".json,application/json" hidden>
+        <button id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+    <p class="online-note" id="online-note">Online trophies: the official list for Grand Theft Auto VI has no online trophies — every trophy is earned in the story and open world. The filter is here for completeness.</p>
+  </section>
+
+  <section class="roadmap" id="roadmap" aria-label="Roadmap to the Platinum">
+    <h2>Roadmap to the Platinum</h2>
+    <p class="roadmap-intro">Six stages, in the order to play them. Story first, then activities, then collectibles, and 100% completion last — the Platinum pops when the other 54 are done. Estimated time to Platinum: about 200–300 hours (PowerPyx / Push Square estimate, not a measured average). No trophy needs online play, and cheats disable trophies.</p>
+    <ol class="stages" id="stages"></ol>
+  </section>
+
+  <div class="layout">
+    <section class="checklist" aria-label="Trophy checklist">
+      <h2>Trophy checklist <span class="count" id="list-count">55 trophies</span></h2>
+      <p class="checklist-hint">Tick a trophy when you earn it — progress saves in this browser. Click any trophy to open its guide and sources.</p>
+      <ul class="trophy-list" id="trophy-list"></ul>
+    </section>
+
+    <aside class="guide-panel" id="guide-panel" aria-label="Trophy guide">
+      <div class="guide-empty" id="guide-empty">
+        <h2>Pick a trophy</h2>
+        <p>Click any trophy in the checklist to see its full guide: what to do, where and how, when it can be missed, and the sources each fact comes from.</p>
+        <p class="guide-tip">Start with <strong>Just Like Paradise</strong> — the opening mission — and work the roadmap in order.</p>
+      </div>
+      <article class="guide-card" id="guide-card" hidden>
+        <p class="guide-grade" id="guide-grade"></p>
+        <h2 id="guide-name"></h2>
+        <p class="guide-desc" id="guide-desc"></p>
+        <div class="guide-meta" id="guide-meta"></div>
+        <h3>Guide</h3>
+        <p id="guide-text"></p>
+        <h3>Steps</h3>
+        <ol class="guide-steps" id="guide-steps"></ol>
+        <h3>Sources</h3>
+        <ul class="guide-sources" id="guide-sources"></ul>
+        <p class="guide-cite-note">Sources are cited, never copied. The official name and description are shown exactly as PlayStation publishes them; every guide is written for this entry, in our own words.</p>
+        <button class="guide-earn" id="guide-earn" type="button">Mark as earned</button>
+      </article>
+    </aside>
+  </div>
+
+  <section class="about" aria-label="About this guide">
+    <h2>About this guide</h2>
+    <p>Names, descriptions and grades are the official PlayStation 5 trophy list, as Exophase and PSNProfiles published it — the two agreed on every name, description and grade. Guides are written for this entry, in our own words, and cite their sources beside each trophy. Where the record is honest about uncertainty, the guide says so: there is no published definitive missable list beyond the Chapter 1 meditation session flagged by GTABase, and the cryptic trophies (Personal Best, Actions Speak Louder, Bad Luck I Guess, The Truth Is Out There) are marked as best-effort readings of their official descriptions, not as confirmed facts.</p>
+    <p>28 of the 55 trophies are hidden on PlayStation until earned. The spoiler setting hides the names and descriptions of story trophies until you tick them earned — the tracker knows what they are, you do not have to see them.</p>
+    <p class="disclaimer">An unofficial fan-made guide. Not affiliated with Rockstar Games or PlayStation. No Rockstar logo, artwork or game screenshots are used anywhere in this app.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Ledger — GTA VI Trophy Guide &amp; Tracker. Made for the make.fun bounty “Build the best GTA 6 trophy guide”.</p>
+</footer>
+
+<script src="src/app.js"></script>
+</body>
+</html>
